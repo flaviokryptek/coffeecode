@@ -14,39 +14,39 @@
 
     <div class="calculator">
         <div class="display">
-            <p>1234567890</p>
+            <p id="display"></p>
         </div>
         <div class="keyboard">
             <table>
                 <tr> 
                     <td id="percentage">%</td>
-                    <td id="clean">C</td>
+                    <td id="clean" onclick="document.getElementById('display').innerText = ''">C</td>
                     <td id="erase">E</td>
                     <td id="division">/</td>
                 </tr>
                 <tr> 
-                    <td id="7">7</td>
-                    <td id="8">8</td>
-                    <td id="9">9</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">7</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">8</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">9</td>
                     <td id="multiplication">*</td>
                 </tr>
                 <tr> 
-                    <td id="4">4</td>
-                    <td id="5">5</td>
-                    <td id="6">6</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">4</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">5</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">6</td>
                     <td id="subtraction">-</td>
                 </tr>
                 <tr> 
-                    <td id="1">1</td>
-                    <td id="2">2</td>
-                    <td id="3">3</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">1</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">2</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">3</td>
                     <td id="addition">+</td>
                 </tr>
                 <tr> 
-                    <td id="00">00</td>
-                    <td id="0">0</td>
-                    <td id=".">.</td>
-                    <td id="result">=</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">00</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">0</td>
+                    <td onclick="document.getElementById('display').innerText += this.innerText">.</td>
+                    <td id="result" onclick="result()">=</td>
                 </tr>
             </table>
         </div>
