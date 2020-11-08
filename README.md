@@ -1,2 +1,2 @@
 # coffeecode
-Codes who i create just for studies and practices
+Codes who i create for studies and practices
